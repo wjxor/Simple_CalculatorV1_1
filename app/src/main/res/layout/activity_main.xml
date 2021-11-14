@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="357dp"
+        tools:layout_editor_absoluteY="148dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <EditText
+                android:id="@+id/edNum1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_span="5"
+                android:ems="10"
+                android:hint="첫번째 숫자 입력"
+                android:inputType="textPersonName" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <EditText
+                android:id="@+id/edNum2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_span="5"
+                android:ems="10"
+                android:hint="두번째 숫자 입력"
+                android:inputType="textPersonName" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/btnNum0"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="0"
+                android:textSize="24sp"/>
+
+            <Button
+                android:id="@+id/btnNum1"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="1"
+                android:textSize="24sp"/>
+
+            <Button
+                android:id="@+id/btnNum2"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="2"
+                android:textSize="24sp"/>
+
+            <Button
+                android:id="@+id/btnNum3"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="3"
+                android:textSize="24sp"/>
+
+            <Button
+                android:id="@+id/btnNum4"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="4"
+                android:textSize="24sp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/btnNum5"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="5"
+                android:textSize="24sp"/>
+
+            <Button
+                android:id="@+id/btnNum6"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="6"
+                android:textSize="24sp"/>
+
+            <Button
+                android:id="@+id/btnNum7"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="7"
+                android:textSize="24sp"/>
+
+            <Button
+                android:id="@+id/btnNum8"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="8"
+                android:textSize="24sp"/>
+
+            <Button
+                android:id="@+id/btnNum9"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="9"
+                android:textSize="24sp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_span="5"
+                android:text="더하기"
+                android:textSize="18sp"
+                app:backgroundTint="#078EF4" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/btnSub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_span="5"
+                android:text="빼기"
+                android:textSize="18sp"
+                app:backgroundTint="#078EF4" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/btnMul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_span="5"
+                android:text="곱하기"
+                android:textSize="18sp"
+                app:backgroundTint="#078EF4" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/btnDiv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_span="5"
+                android:text="나누기"
+                android:textSize="18sp"
+                app:backgroundTint="#078EF4" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="421dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvResult"
+                android:layout_width="398dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="5dp"
+                android:layout_span="5"
+                android:background="#FFEB3B"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="계산결과"
+                android:textColor="#E91E63"
+                android:textSize="24sp" />
+        </TableRow>
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
