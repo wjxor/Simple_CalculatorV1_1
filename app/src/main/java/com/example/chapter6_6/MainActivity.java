@@ -67,12 +67,14 @@ public class MainActivity extends AppCompatActivity {
             });
         }
 
+        // 덧셈 기능
         btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 strNum1 = edNum1.getText().toString();
                 strNum2 = edNum2.getText().toString();
 
+                // 입력창이 비어있으면 경고문구 발생
                 if ((strNum1.isEmpty() == true) || (strNum2.isEmpty() == true) ){
                     Toast.makeText(getApplicationContext(), "숫자를 입력하세요!", Toast.LENGTH_SHORT).show();
                 } else {
@@ -83,39 +85,59 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // 뺄셈 기능
         btnSub.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 strNum1 = edNum1.getText().toString();
                 strNum2 = edNum2.getText().toString();
 
-                result = Integer.parseInt(strNum1) - Integer.parseInt(strNum2);
+                // 입력창이 비어있으면 경고문구 발생
+                if ((strNum1.isEmpty() == true) || (strNum2.isEmpty() == true)) {
+                    Toast.makeText(getApplicationContext(), "숫자를 입력하세요!", Toast.LENGTH_SHORT).show();
+                } else {
+                    result = Integer.parseInt(strNum1) - Integer.parseInt(strNum2);
 
-                tvResult.setText("계산결과 : " + result);
+                    tvResult.setText("계산결과 : " + result);
+                }
+
+
             }
         });
 
+        // 곱셈 기능
         btnMul.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 strNum1 = edNum1.getText().toString();
                 strNum2 = edNum2.getText().toString();
 
-                result = Integer.parseInt(strNum1) * Integer.parseInt(strNum2);
+                // 입력창이 비어있으면 경고문구 발생
+                if ((strNum1.isEmpty() == true) || (strNum2.isEmpty() == true)) {
+                    Toast.makeText(getApplicationContext(), "숫자를 입력하세요!", Toast.LENGTH_SHORT).show();
+                } else {
+                    result = Integer.parseInt(strNum1) * Integer.parseInt(strNum2);
 
-                tvResult.setText("계산결과 : " + result);
+                    tvResult.setText("계산결과 : " + result);
+                }
             }
         });
 
+        // 나눗셈 기능
         btnDiv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 strNum1 = edNum1.getText().toString();
                 strNum2 = edNum2.getText().toString();
 
-                result = Integer.parseInt(strNum1) / Integer.parseInt(strNum2);
+                // 입력창이 비어있으면 경고문구 발생
+                if ((strNum1.isEmpty() == true) || (strNum2.isEmpty() == true)) {
+                    Toast.makeText(getApplicationContext(), "숫자를 입력하세요!", Toast.LENGTH_SHORT).show();
+                } else {
+                    result = Integer.parseInt(strNum1) / Integer.parseInt(strNum2);
 
-                tvResult.setText("계산결과 : " + result);
+                    tvResult.setText("계산결과 : " + result);
+                }
             }
         });
     }
