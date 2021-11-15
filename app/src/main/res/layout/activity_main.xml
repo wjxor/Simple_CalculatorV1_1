@@ -201,6 +201,13 @@
             android:layout_width="421dp"
             android:layout_height="wrap_content">
 
+            <Button
+                android:id="@+id/btnClear"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="C"
+                android:textSize="24sp" />
+
             <TextView
                 android:id="@+id/tvResult"
                 android:layout_width="398dp"
@@ -210,9 +217,11 @@
                 android:background="#FFEB3B"
                 android:gravity="center_vertical"
                 android:padding="10dp"
-                android:text="계산결과"
+                android:text="계산결과 :"
                 android:textColor="#E91E63"
                 android:textSize="24sp" />
+
         </TableRow>
     </TableLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

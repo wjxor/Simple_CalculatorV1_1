@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     Button[] numButtons = new Button[10];
     // Button btnNum0, btnNum1, btnNum2, btnNum3, btnNum4, btnNum5, btnNum6, btnNum7, btnNum8, btnNum9;
     Button btnAdd, btnSub, btnMul, btnDiv;
+    Button btnClear;
     TextView tvResult;
 
     String strNum1, strNum2;
@@ -43,6 +44,8 @@ public class MainActivity extends AppCompatActivity {
         btnMul = (Button) findViewById(R.id.btnMul);
         btnSub = (Button) findViewById(R.id.btnSub);
         btnDiv = (Button) findViewById(R.id.btnDiv);
+
+        btnClear = (Button) findViewById(R.id.btnClear);
 
         tvResult = (TextView) findViewById(R.id.tvResult);
         
@@ -138,6 +141,15 @@ public class MainActivity extends AppCompatActivity {
 
                     tvResult.setText("계산결과 : " + result);
                 }
+            }
+        });
+
+        // 입력칸 숫자들을 없애주는 초기화버튼 생성
+        btnClear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                edNum1.getText().clear();
+                edNum2.getText().clear();
             }
         });
     }
